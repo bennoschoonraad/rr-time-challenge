@@ -164,7 +164,7 @@ const SnakeGame = () => {
             if (head.x === food.x && head.y === food.y) {
                 snake.unshift({ ...head }); // Add a new segment to the snake
                 food = generateFood(); // Generate a new food
-                countdown += 10;
+                countdown += 5;
                 setAliveTime(new Date());// Update the time
 
             } else {
